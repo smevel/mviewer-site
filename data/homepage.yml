@@ -1,0 +1,190 @@
+############################# banner ############################
+banner:
+  enable : true
+
+  title : "Propulser vos données"
+  content : "mviewer est une application cartographique initiée et développée par la Région Bretagne, sous le nom de Kartenn (carte en breton).<br><br>
+            Le code source de cette application est librement réutilisable depuis 2014.
+            De nombreuses collectivités mais également des entreprises, le secteur de la recherche et de l’enseignement utilisent librement cette application et participent à son évolution."
+  image : "images/mviewer.png"
+  button:
+    link : "#feature"
+
+    label : "Découvrez le mviewer !"
+
+
+############################# Feature ############################
+features:
+  enable : true
+
+  title : "Un visualiseur cartographique à votre image"
+  image : "images/mviewer-2.png"
+
+  # feature at the left of the image
+  leftSide:
+    # feature item loop
+  - icon : "tf-ion-stats-bars" # tf-ion-ios-pie # tf-ion-podium
+
+
+    title : "Plusieurs modes de visualisation"
+    content : "Cartographie - Chiffres-clés - Datavisualisation - Contenu éditorial (Photographies, textes, vidéos, etc)"
+
+    # feature item loop
+  - icon : "tf-ion-ios-people"
+
+
+    title : "Simple d’utilisation et intuitif"
+    content : "Tant pour les spécialistes que pour les « non-géomaticiens » ou le grand public, donnez un maximum d’autonomie à vos utilisateurs"
+
+    # feature item loop
+  - icon : "tf-ion-social-buffer"
+
+
+    title : "Consommer des données"
+    content : "Infrastructures de données spatiales (IDS) - Cadastre - IGN - Plateformes Open Data"
+
+
+  # feature at the right of the image
+  rightSide:
+    # feature item loop
+  - icon : "tf-ion-ios-browsers"
+
+
+    title : "Compatible avec les standards de l’OGC"
+    content : "Flux WMS, WFS, CSW - Geoserver - Base de données - GeoNetwork"
+
+    # feature item loop
+  - icon : "tf-ion-ios-unlocked"
+
+
+    title : "Conçu sur des technologies libres"
+    content : "Librairies Javascript</br>
+(OpenLayers 5, Chart.js - Proj4)</br>
+Framework Bootstrap"
+
+    # feature item loop
+  - icon : "tf-ion-ios-cog"
+
+
+    title : "Un visualisateur à la carte"
+    content : "Installation simple et rapide</br>
+Paramétrage en XML</br>
+Interface personnalisable</br>
+Déclinable en applications métiers"
+
+
+############################# promo ############################
+promo:
+  enable : true
+  image : "images/mviewer-studio.png"
+
+  title : "Studio, le générateur d'applications"
+  content : "mviewer studio permet de déployer facilement des applications pour des non spécialistes.<br>
+            Plus besoin de connaître les langages de développement, créez, paramétrez et personnalisez facilement votre application cartographique."
+
+
+############################# About Product #######################
+aboutProduct:
+  enable : true
+
+  title : "Pourquoi choisir le mviewer ?"
+  items:
+    # about product item loop
+    - image : "images/mviewer-4.png"
+
+      title : "Simple, rapide, modulaire, ergonomique"
+      content : "Élargissez la cible des utilisateurs : vous pouvez enrichir vos applications avec des données géographiques, des graphiques et du contenu éditorial pour les diffuser sur vos sites institutionnels et sur tous les supports."
+      button:
+        enable : true
+        label : "Exemples"
+        link : "http://kartenn.region-bretagne.fr/kartoviz/demo/"
+
+    # about product item loop
+    - image : "images/mviewer-3.png"
+      title : "Communautaire, libre"
+      content : "Développé par une communauté de développeurs et d’utilisateurs, contribuez vous aussi aux nouvelles évolutions !
+                <br>Sur github, lors des rencontres mviewer..."
+      button:
+        enable : true
+
+        label : "Bien démarrer"
+        link : "#"
+
+
+#################################### Gallery ########################
+gallery:
+  enable : true
+
+  title : "Ils réutilisent"
+  # Set the image directory to use as base
+  directory : "images/showcase"
+  # Set the images to show in the gallery
+
+  images : ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png"]
+  urlp : ["", "", "", "", "", ""]
+
+#################################### Gallery ########################
+galleryC:
+  enable : true
+  title : "Ils contribuent"
+  items:
+    # about images item loop
+    - image : "images/showcase/1.png"
+      title : "Région Bretagne"
+      lien : "https://www.bretagne.bzh"
+
+    - image : "images/showcase/c3.png"
+      title : "Néogeo"
+      lien : "https://www.neogeo.fr"
+
+    - image : "images/showcase/c4.png"
+      title : "JDev"
+      lien : "https://jdev.fr"
+
+    - image : "images/showcase/c5.png"
+      title : "Agathe Adam"
+      lien : "#"
+
+
+################################## call to action ###################
+cta:
+  enable : true
+  # bgImage : "images/call-to-action.jpg"
+
+  title : Les réutilisateurs en carte
+  content : "carte à réaliser des organismes ayant déployé des applications"
+
+
+
+  iframe : "https://geobretagne.fr/mviewer/?x=-373334&y=6135841&z=8&l=deploiement&lb=ortho1&config=%2Fpub%2Fsm-megalis%2Fapps%2Fdeploiement.xml&mode=u#"
+
+
+############################## Testimonial ##########################
+testimonial:
+  enable : false
+  title : "Watch Review"
+  testimonialItem:
+    # testimonial item loop
+    - name : "Jonathon Andrew"
+      designation : "CEO, Themefisher"
+      image : "images/avater.png"
+      content : "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+
+    # testimonial item loop
+    - name : "Jonathon Andrew"
+      designation : "CEO, Themefisher"
+      image : "images/avater.png"
+      content : "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+
+    # testimonial item loop
+    - name : "Jonathon Andrew"
+      designation : "CEO, Themefisher"
+      image : "images/avater.png"
+      content : "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+
+
+  ################# button ###############
+  button:
+    enable : true
+    label : "Installez"
+    link : "#"
