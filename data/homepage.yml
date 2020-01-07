@@ -8,9 +8,9 @@ banner:
             De nombreuses collectivités mais également des entreprises, le secteur de la recherche et de l’enseignement utilisent librement cette application et participent à son évolution."
   image : "images/mviewer.png"
   button:
-    link : "#feature"
+    link : "/#feature"
 
-    label : "Découvrez le mviewer !"
+    label : "Découvrir mviewer !"
 
 
 ############################# Feature ############################
@@ -34,7 +34,7 @@ features:
 
 
     title : "Simple d’utilisation et intuitif"
-    content : "Tant pour les spécialistes que pour les « non-géomaticiens » ou le grand public, donnez un maximum d’autonomie à vos utilisateurs"
+    content : "Donnez un maximum d’autonomie à vos utilisateurs spécialistes ou grand public"
 
     # feature item loop
   - icon : "tf-ion-social-buffer"
@@ -50,15 +50,15 @@ features:
   - icon : "tf-ion-ios-browsers"
 
 
-    title : "Compatible avec les standards de l’OGC"
-    content : "Flux WMS, WFS, CSW - Geoserver - Base de données - GeoNetwork"
+    title : "Interopérable au travers de standards et API"
+    content : "OGC - Geoserver - Base de données - GeoNetwork"
 
     # feature item loop
   - icon : "tf-ion-ios-unlocked"
 
 
     title : "Conçu sur des technologies libres"
-    content : "Librairies Javascript</br>
+    content : "Bibliothèques Javascript</br>
 (OpenLayers 5, Chart.js - Proj4)</br>
 Framework Bootstrap"
 
@@ -68,7 +68,7 @@ Framework Bootstrap"
 
     title : "Un visualisateur à la carte"
     content : "Installation simple et rapide</br>
-Paramétrage en XML</br>
+Paramétrage avancé</br>
 Interface personnalisable</br>
 Déclinable en applications métiers"
 
@@ -93,7 +93,7 @@ aboutProduct:
     - image : "images/mviewer-4.png"
 
       title : "Simple, rapide, modulaire, ergonomique"
-      content : "Élargissez la cible des utilisateurs : vous pouvez enrichir vos applications avec des données géographiques, des graphiques et du contenu éditorial pour les diffuser sur vos sites institutionnels et sur tous les supports."
+      content : "Élargissez la cible de vos utilisateurs : vous pouvez enrichir vos applications avec des données géographiques, des graphiques et du contenu éditorial pour les diffuser sur vos sites institutionnels et sur tous les supports."
       button:
         enable : true
         label : "Exemples"
@@ -114,13 +114,12 @@ aboutProduct:
 #################################### Gallery ########################
 gallery:
   enable : true
-
   title : "Ils réutilisent"
   # Set the image directory to use as base
   directory : "images/showcase"
   # Set the images to show in the gallery
 
-  images : ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png"]
+  images : ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png", "16.png", "17.png", "18.png", "19.png", "20.png", "21.png", "22.png",]
   urlp : ["", "", "", "", "", ""]
 
 #################################### Gallery ########################
@@ -143,7 +142,7 @@ galleryC:
 
     - image : "images/showcase/c5.png"
       title : "Agathe Adam"
-      lien : "#"
+      lien : ""
 
 
 ################################## call to action ###################
