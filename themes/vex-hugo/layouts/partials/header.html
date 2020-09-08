@@ -7,7 +7,7 @@
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!-- Icones & drapeaux de choix des langues -->
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ml-auto text-center text-lg-left">
           <li class="nav-item">
@@ -18,9 +18,17 @@
             <a class="nav-link page-scroll" href="#{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
+          {{ range .Site.Menus.external }}
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="http://mviewerdoc.readthedocs.io/fr/latest/" target="_blank">Documentation</a>
+            <a class="nav-link page-scroll" href="{{ .URL }}" target="_blank">{{ .Name }}</a>
           </li>
+          {{ end }}
+          <li class="nav-item nav-link page-scroll locale-select">|</li>
+          {{ range $.Site.Home.AllTranslations }}
+          <li class="nav-item ">
+            <a class="nav-link page-scroll" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          </li>
+          {{ end }}
         </ul>
       </div>
     </nav>

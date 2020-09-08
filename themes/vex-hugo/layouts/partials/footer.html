@@ -1,25 +1,39 @@
-<footer>
+<footer class="bg-opacity">
   <div class="container text-center">
     <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <a href="{{ .Site.BaseURL }}" class="footer-logo mb-4">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Title }}"> {{ else }} {{ .Title }} {{ end }}</a>
+        <div class="col-lg-5 col-xs-12 about-company">
+          <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> {{ else }} {{ .Site.Title }} {{ end }}</a>
+          <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
           <ul class="list-inline footer-menu">
-            <li class="list-inline-item">
-              <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
-            </li>
             {{ range .Site.Menus.main }}
-            <li class="list-inline-item">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
               <a class="page-scroll" href="#{{ .URL }}">{{ .Name }}</a>
             </li>
             {{ end }}
-            <li class="list-inline-item">
-              <a class="nav-link page-scroll" href="http://mviewerdoc.readthedocs.io/fr/latest/" target="_blank">Documentation</a>
+            {{ range .Site.Menus.external }}
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a class="page-scroll" href="{{ .URL }}" target="_blank">{{ .Name }}</a>
             </li>
+            {{ end }}
           </ul>
-          <p class="copyright-text">{{ .Site.Params.copyright | markdownify }}</p>
         </div>
-      </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <ul class="list-inline footer-menu">
+              {{ range $.Site.Home.AllTranslations }}
+              <li class="list-inline-item bg-transparent border-0 p-0 mb-2"><a class="page-scroll" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+              {{ end }}
+          </ul>
+          <ul class="list-inline footer-menu">
+                <p class="copyright-text"><a href="https://github.com/geobretagne/mviewer"><i class="d-inlin-block h2 mb-10 tf-ion-social-github"></i></a></p>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <div class="block">
+            <p class="copyright-text">{{ .Site.Params.copyright | markdownify }}</p>
+          </div>
+        </div>
     </div>
   </div>
 </footer>
@@ -32,19 +46,3 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "script.js" }}
 <script src="{{ $script.Permalink }}"></script>
-{{ "<!-- google analitycs -->" | safeHTML }}
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
-  ga('send', 'pageview');
-</script>

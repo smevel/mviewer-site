@@ -1,5 +1,7 @@
-{{- if .Site.Data.homepage.banner.enable }}
-{{- with .Site.Data.homepage.banner }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.banner.banner.enable }}
+{{ with $data.banner.banner }}
 <!-- hero area -->
 <section class="section">
   <div class="container">
@@ -11,13 +13,13 @@
               <div class="block">
                   <h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
                   <p class="mb-4">{{ .content | markdownify }}</p>
-                  {{- with .button }}
-                  <a class="btn btn-main" href="{{ .link | absURL }}" role="button">{{ .label }}</a>
-                  {{- end }}
+                  {{ with .button }}
+                  <a class="btn btn-main" href="{{ .link | relLangURL }}" role="button">{{ .label }}</a>
+                  {{ end }}
               </div>
           </div>
       </div><!-- .row close -->
   </div><!-- .container close -->
 </section><!-- header close -->
-{{- end }}
-{{- end }}
+{{ end}}
+{{ end}}

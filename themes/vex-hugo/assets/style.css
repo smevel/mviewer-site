@@ -166,14 +166,35 @@ a:active {
   font-size: 18px;
   padding: 15px 40px;
   display: inline-block;
-  background-color: #efc400; /* f9a743 */
+  background-color: #efc400;
   box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
   background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+}
+.btn-second {
+  color: #efc400;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #fff; /* f9a743 */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
 }
 
 .btn-main:hover, .btn-main:focus {
   background-color: #efc400; /* f9a743 */
   color: #fff;
+}
+.btn-transparent:hover,
+.btn-transparent:focus {
+  background-color: #efc400;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.btn-second:hover, .btn-second:focus {
+  background-color: #fff; /* f9a743 */
+  color: #efc400;
 }
 
 .btn-main-sm {
@@ -526,5 +547,99 @@ footer p.copyright-text a {
 footer p.copyright-text a:hover {
   text-decoration: none;
 }
+/*=================================================================
+  Portfolio section
+==================================================================*/
+.portfolio-filter {
+  margin-bottom: 40px;
+  text-align: center;
+}
 
-/*# sourceMappingURL=maps/style.css.map */
+.portfolio-filter .btn {
+  outline: 0;
+  /* border: 1px solid rgba(239,196,0, 0.8); */
+  background: transparent;
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 20px;
+  font-weight: 700;
+  transition: .3s all;
+}
+
+.portfolio-filter .btn.active {
+	/* border-color: #efc400; */
+    background-color: #efc400;
+    color: white;
+}
+
+.portfolio-block {
+  position: relative;
+}
+
+.portfolio-block:before {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  opacity: 0;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  content: '';
+}
+
+.portfolio-block img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-block:hover:before {
+  opacity: 1;
+}
+
+.portfolio-block:hover .caption h4 {
+  top: 45%;
+}
+
+.portfolio-block:hover .caption {
+  opacity: 1;
+  top: 55%;
+}
+
+.portfolio-block .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.portfolio-block .caption h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.portfolio-block .caption h4 a {
+  color: #555;
+}
+
+.portfolio-block .caption .search-icon {
+  background: #efc400;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.portfolio-block .caption .search-icon i {
+  line-height: 50px;
+}
+a.search-icon.image-popup {
+    text-decoration: none;
+}

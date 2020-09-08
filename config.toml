@@ -1,8 +1,62 @@
 ################################### Default Configuration ############################
 baseurl = "https://mviewer.netlify.com/"
-languageCode = "fr"
-title = "mviewer"
 theme = "vex-hugo"
+title = "mviewer"
+# default content language
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
+# disable language
+disableLanguages = []
+
+################################# language ################################
+[languages]
+  [languages.fr]
+    contentDir = "content/fr"
+	languageName = "FR"
+	languageCode = "fr-fr"
+      [[languages.fr.menu.main]]
+      name = "A PROPOS"
+      URL = "feature"
+      weight = 1
+      [[languages.fr.menu.main]]
+      name = "PORTFOLIO"
+      URL = "portfolio"
+      weight = 2
+	  [[languages.fr.menu.main]]
+      name = "UTILISATEURS"
+      URL = "gallery"
+      weight = 3
+      [[languages.fr.menu.external]]
+      name = "TÉLÉCHARGER"
+      URL = "https://github.com/geobretagne/mviewer"
+      weight = 4
+      [[languages.fr.menu.external]]
+      name = "DOCUMENTATION"
+      URL = "https://mviewerdoc.readthedocs.io/fr/latest/"
+      weight = 5
+  [languages.en]
+	languageName = "EN"
+	languageCode = "en-us"
+      [[languages.en.menu.main]]
+      name = "ABOUT"
+      URL = "feature"
+      weight = 1
+      [[languages.en.menu.main]]
+      name = "PORTFOLIO"
+      URL = "portfolio"
+      weight = 2
+      [[languages.en.menu.main]]
+      name = "USERS"
+      URL = "gallery"
+      weight = 3
+      [[languages.en.menu.external]]
+      name = "DOWNLOAD"
+      URL = "https://github.com/geobretagne/mviewer"
+      weight = 4
+      [[languages.en.menu.external]]
+      name = "DOCUMENTATION"
+      URL = "https://mviewerdoc.readthedocs.io/fr/latest/"
+      weight = 5
 
 #################################### Plugins ##########################################
 [params.plugins]
@@ -30,31 +84,19 @@ theme = "vex-hugo"
   URL = "js/owl.carousel.min.js"
   [[params.plugins.js]]
   URL = "js/jquery.magnific-popup.min.js"
+  [[params.plugins.js]]
+  URL = "js/shuffle.min.js"
 
-
-###################################### Navigation ######################################
-[menu]
-
-  [[menu.main]]
-  name = "A propos"
-  URL = "feature"
-  weight = 2
-
-  [[menu.main]]
-  name = "Ils contribuent et développent"
-  URL = "gallery"
-  weight = 3
 
 
 ########################### Default parameters ##########################
 [params]
 logo = ""
-home = "Accueil"
 # Meta data
 description = "This is meta description"
 author = "mviewer"
 # copyright
-copyright = "Copyright 2019 &copy; [themefisher](http://www.Themefisher.com) | All right reserved."
+copyright = "Copyright 2020 | Theme : &copy; [themefisher](https://github.com/themefisher/vex-hugo) | All right reserved."
 
   # Preloader
   [params.preloader]

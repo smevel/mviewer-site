@@ -1,5 +1,8 @@
-{{ if .Site.Data.homepage.testimonial.enable }}
-{{ with .Site.Data.homepage.testimonial }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.testimonial.testimonial.enable }}
+{{- with $data.testimonial.testimonial }}
+
 <section class="testimonials section" id="testimonial">
   <div class="container">
     <div class="row justify-content-center">

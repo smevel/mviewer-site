@@ -1,5 +1,8 @@
-{{ if .Site.Data.homepage.gallery.enable }}
-{{ with .Site.Data.homepage.gallery }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.gallery.gallery.enable }}
+{{ with $data.gallery.gallery }}
+
 <section class="gallery" id="gallery">
   <div class="container">
     <div class="row">
@@ -9,8 +12,8 @@
         </div>
 
         <div class="gallery-slider">
-          {{- $basePath := relURL .directory }}
-          {{- range .images }}
+          {{ $basePath := relURL .directory }}
+          {{ range .images }}
           <div class="block">
             <img class="img-fluid" src="{{ $basePath }}/{{ . }}" alt="">
           </div>
@@ -22,8 +25,8 @@
 </section>
 {{ end }}
 {{ end }}
-{{ if .Site.Data.homepage.galleryC.enable }}
-{{ with .Site.Data.homepage.galleryC }}
+
+{{ with $data.gallery.galleryC }}
 <section class="gallery" id="galleryC">
   <div class="container">
     <div class="row">
@@ -33,14 +36,19 @@
         </div>
         <div class="gallery-slider">
           {{ range $index, $element := .items }}
+		  {{ if and ( ne .lien "" ) ( ne .lien "#" ) }}
           <div class="block">
             <a href="{{ .lien }}" target="_blank"><img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .title }}"></a>
           </div>
-          {{- end }}
+			{{ else }}
+          <div class="block">
+			<span><img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .title }}"></span>
+          </div>
+	      {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
 {{ end }}

@@ -1,5 +1,8 @@
-{{ if .Site.Data.homepage.promo.enable }}
-{{ with .Site.Data.homepage.promo }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.promo.promo.enable }}
+{{- with $data.promo.promo }}
+
 <section class="bg-orange section">
   <div class="container">
     <div class="row">
@@ -10,6 +13,11 @@
         <div class="content">
           <h2 class="subheading text-white font-weight-bold mb-10">{{ .title | markdownify }}</h2>
           <p class="text-white font-weight-normal">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | absURL }}" target="_blank" class="btn btn-second btn-main-sm">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
