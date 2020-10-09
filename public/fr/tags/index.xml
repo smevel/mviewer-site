@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on mviewer</title>
-    <link>https://mviewer.netlify.com/fr/tags/</link>
+    <link>https://smevel.github.io.git/fr/tags/</link>
     <description>Recent content in Tags on mviewer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     
-	<atom:link href="https://mviewer.netlify.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://smevel.github.io.git/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

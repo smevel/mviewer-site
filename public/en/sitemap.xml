@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mviewer.netlify.com/en/categories/</loc>
+    <loc>https://smevel.github.io.git/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mviewer.netlify.com/fr/categories/"
+                href="https://smevel.github.io.git/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mviewer.netlify.com/en/categories/"
+                href="https://smevel.github.io.git/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://mviewer.netlify.com/en/</loc>
+    <loc>https://smevel.github.io.git/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mviewer.netlify.com/fr/"
+                href="https://smevel.github.io.git/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mviewer.netlify.com/en/"
+                href="https://smevel.github.io.git/en/"
                 />
   </url>
   
   <url>
-    <loc>https://mviewer.netlify.com/en/tags/</loc>
+    <loc>https://smevel.github.io.git/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mviewer.netlify.com/fr/tags/"
+                href="https://smevel.github.io.git/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mviewer.netlify.com/en/tags/"
+                href="https://smevel.github.io.git/en/tags/"
                 />
   </url>
   
